@@ -1,0 +1,15 @@
+title User Authentication and Payment
+
+User->WebApp: Open Login Page
+User->WebApp: Enter Credentials
+WebApp->AuthService: Authenticate User (eq.js)
+AuthService->Database: Verify Credentials
+Database-->AuthService: Credentials Valid
+AuthService-->WebApp: Authentication Success
+WebApp-->User: Login Successful
+User->WebApp: Proceed to Checkout
+WebApp->ValidationService: Validate Cart and User Data (every.js, get.js)
+ValidationService-->WebApp: Validation Success
+WebApp->PaymentGateway: Process Payment
+PaymentGateway-->WebApp: Payment Confirmation
+WebApp-->User: Payment Successful, Order Confirmed

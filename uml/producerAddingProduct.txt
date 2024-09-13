@@ -1,0 +1,12 @@
+title Producer Adding Product
+
+Producer->ProducerPortal: Log In
+ProducerPortal->AuthService: Authenticate (eq.js)
+AuthService-->ProducerPortal: Authentication Success
+Producer->ProducerPortal: Open Product Submission Form
+Producer->ProducerPortal: Fill in Product Details
+ProducerPortal->ValidationService: Validate Input (isEmpty.js, clamp.js, toString.js)
+ValidationService-->ProducerPortal: Validation Success
+ProducerPortal->Database: Submit Product Data
+Database-->ProducerPortal: Product Added Confirmation
+ProducerPortal-->Producer: Confirmation Message

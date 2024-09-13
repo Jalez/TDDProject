@@ -1,0 +1,17 @@
+title User Shopping Flow
+
+User->WebApp: Open Homepage
+User->WebApp: Enter Search Query
+WebApp->SearchService: Parse Query (words.js)
+SearchService->Database: Fetch Matching Products
+Database-->SearchService: Return Products
+SearchService-->WebApp: Return Search Results
+WebApp-->User: Display Search Results
+User->WebApp: Add Product to Cart
+WebApp->CartService: Update Cart (filter.js, add.js)
+CartService-->WebApp: Cart Updated
+WebApp-->User: Cart Updated Confirmation
+User->WebApp: Proceed to Checkout
+WebApp->PaymentGateway: Initiate Payment
+PaymentGateway-->WebApp: Payment Success
+WebApp-->User: Order Confirmation
