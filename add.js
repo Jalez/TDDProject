@@ -1,6 +1,6 @@
 /** @format */
 
-import createMathOperation from './.internal/createMathOperation.js';
+import createMathOperation from './COMP.SE.200-2024-2025-1/src/.internal/createMathOperation.js';
 
 /**
  * Adds two numbers.
