@@ -7,6 +7,16 @@ assignees: ''
 
 ---
 
+**Severity** 
+
+Three options (name one):  
+
+Critical: Prevents system functionality. 
+
+Major: Breaks significant functionality but with workarounds. 
+
+Minor: Cosmetic or usability issues. 
+
 **Describe the bug**
 A clear and concise description of what the bug is.
 
