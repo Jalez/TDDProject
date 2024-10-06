@@ -1,4 +1,4 @@
-import add from '../add.js';
+import add from '../COMP.SE.200-2024-2025-1/src/add.js';
 import { expect } from 'chai';
 
 
