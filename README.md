@@ -14,7 +14,7 @@ This project is a simple demonstration of Test Driven Development (TDD) using Ja
 
 ### Explanation of Tests for add.js
 
-[add.test.js](./add.test.js)
+[add.test.js](./test/add.test.js)
 
 Test 1: Checks the addition of two positive numbers.
 
@@ -26,8 +26,6 @@ Test 4: Checks the addition when both numbers are zero.
 
 Test 5: Checks the addition of decimal numbers, accounting for floating-point precision.
 
-Test 6: Checks behavior when a non-number is provided.
+Test 6: Ensures adding zero returns the original number.
 
-Test 7: Ensures adding zero returns the original number.
-
-Test 8: Checks the default value when no arguments are provided.
+Test 7: Checks the default value when no arguments are provided.
