@@ -33,3 +33,14 @@ jobs:
       # Run the tests
       - name: Run tests
         run: npm test
+
+      # Run coverage tests using c8
+      - name: Run test coverage with c8
+        run: npm run test:coverage
+
+      # Upload coverage results to Coveralls
+      - name: Upload coverage to Coveralls
+        uses: coverallsapp/github-action@v2.1.2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: './coverage/lcov.info'

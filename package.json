@@ -4,14 +4,15 @@
   "description": "<!-- @format -->",
   "main": "add.js",
   "type": "module",
-
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:coverage": "c8 --exclude='**/test/**' npm test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "c8": "^10.1.2",
     "chai": "^5.1.1",
     "mocha": "^10.7.3"
   }

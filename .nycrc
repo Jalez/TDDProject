@@ -1,0 +1,31 @@
+{
+  "include": [
+    "COMP.SE.200-2024-2025-1/src/add.js",
+    "COMP.SE.200-2024-2025-1/src/filter.js",
+    "COMP.SE.200-2024-2025-1/src/words.js",
+    "COMP.SE.200-2024-2025-1/src/isEmpty.js",
+    "COMP.SE.200-2024-2025-1/src/toString.js",
+    "COMP.SE.200-2024-2025-1/src/eq.js",
+    "COMP.SE.200-2024-2025-1/src/clamp.js",
+    "COMP.SE.200-2024-2025-1/src/map.js",
+    "COMP.SE.200-2024-2025-1/src/get.js",
+    "COMP.SE.200-2024-2025-1/src/every.js"
+  ],
+  "exclude": [
+    "**/test/**",
+    "**/*.test.js",
+    "coverage/**",
+    "node_modules/**"
+  ],
+  "reporter": [
+    "text",
+    "html",
+    "lcov"
+  ],
+  "all": true,
+  "check-coverage": true,
+  "statements": 80,
+  "branches": 80,
+  "functions": 80,
+  "lines": 80
+}
