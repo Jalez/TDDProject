@@ -16,7 +16,8 @@ describe('eq.js', () => {
   it('should return true for identical string values', () => {
     expect(eq('a', 'a')).to.be.true;
   });
-
+  
+  // js doc says otherwise xD
   it('should return true for a string and its object wrapper', () => {
     expect(eq('a', Object('a'))).to.be.true;
   });
@@ -50,6 +51,7 @@ describe('eq.js', () => {
     expect(eq(undefined, undefined)).to.be.true;
   });
 
+  // is true because not === :/
   it('should return true for null compared to undefined', () => {
     expect(eq(null, undefined)).to.be.true;
   });
