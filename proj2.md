@@ -6,20 +6,20 @@
   - [ ] Document any required changes for the new assignment, including removing the `.internal` directory from coverage.
 
 ### Setting Up the Testing Environment
-- [ ] **Set Up Local Testing Environment**
-  - [ ] Ensure Node.js 14 (or compatible version) is installed.
-  - [ ] Set up Git and npm locally.
-  - [ ] Install all necessary packages (Mocha, Chai, c8, etc.).
+- [x] **Set Up Local Testing Environment**
+  - [x] Ensure Node.js 14 (or compatible version) is installed.
+  - [x] Set up Git and npm locally.
+  - [x] Install all necessary packages (Mocha, Chai, c8, etc.).
 
-- [ ] **Create GitHub Repository**
-  - [ ] Set up a public repository on GitHub for this project.
-  - [ ] Grant team members access.
-  - [ ] Add `.internal` to `.gitignore` to exclude it from Git and test reports.
+- [x] **Create GitHub Repository**
+  - [x] Set up a public repository on GitHub for this project.
+  - [x] Grant team members access.
+  - [x] Add `.internal` to `.gitignore` to exclude it from Git and test reports.
 
-- [ ] **Link GitHub to Coveralls**
-  - [ ] Create a Coveralls account (if not already done).
-  - [ ] Link the GitHub repository to Coveralls.
-  - [ ] Ensure the repository is accessible from Coveralls for test coverage reports.
+- [x] **Link GitHub to Coveralls**
+  - [x] Create a Coveralls account (if not already done).
+  - [x] Link the GitHub repository to Coveralls.
+  - [x] Ensure the repository is accessible from Coveralls for test coverage reports.
 
 ### Implementing Unit Tests
 - [ ] **Implement Unit Tests**
