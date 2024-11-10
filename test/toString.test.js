@@ -5,7 +5,11 @@ import toString from "../COMP.SE.200-2024-2025-1/src/toString.js";
 
 describe("toString.js", function () {
   it("should return empty string for null", function () {
-    expect(toString(null)).to.equal("null");
+    expect(toString(null)).to.equal("");
+  });
+
+  it("should return undefined string for undefined", function () {
+    expect(toString(undefined)).to.equal("");
   });
 
   it("should return undefined string for no parameters", function () {
@@ -54,7 +58,7 @@ describe("toString.js", function () {
   });
 
   it("should convert function to string", function () {
-    function testFunc() {}
+    function testFunc() {console.log("Hello world")}
     expect(toString(testFunc)).to.equal(testFunc.toString());
   });
 

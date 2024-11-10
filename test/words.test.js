@@ -24,6 +24,22 @@ describe("words.js", function () {
     expect(result).to.deep.equal([]);
   });
 
+  //Do one where null pattern and words
+  it("should handle null string gracefully ", function () {
+    const result = words("Hello, world! How are you?", null);
+    expect(result).to.deep.equal(["Hello", "world", "How", "are", "you"]);
+  });
+
+  it("should handle undefined pattern gracefully ", function () {
+    const result = words("", undefined);
+    expect(result).to.deep.equal([]);
+  });
+
+  it("should handle undefined string gracefully ", function () {
+    const result = words("Hello, world! How are you?", undefined);
+    expect(result).to.deep.equal(["Hello", "world", "How", "are", "you"]);
+  })
+
 
   it("should split words with Unicode characters", function () {
     const result = words("Привет мир"); // 'Hello world' in Russian

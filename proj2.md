@@ -73,14 +73,14 @@
 
 TODO: What is a coverage badge?
 
-- [ ] **Add Coverage Badge**
-  - [ ] Add a Coveralls badge to the GitHub repository’s README to display test coverage statistics.
+- [x] **Add Coverage Badge**
+  - [x] Add a Coveralls badge to the GitHub repository’s README to display test coverage statistics.
 
 ### Reporting and Documentation
 
 - [ ] **Create Test Report**
-  - [ ] **Cover Page**:
-    - [ ] Include document title, course ID and name, student names and numbers, URLs for GitHub repository and Coveralls.
+  - [x] **Cover Page**:
+    - [x] Include document title, course ID and name, student names and numbers, URLs for GitHub repository and Coveralls.
   - [ ] **Definitions, Acronyms, and Abbreviations**:
     - [ ] Add any definitions or acronyms used in the document.
   - [ ] **Introduction**:

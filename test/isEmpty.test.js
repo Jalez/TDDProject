@@ -9,10 +9,11 @@ describe('isEmpty.js', function() {
     expect(isEmpty(null)).to.be.true
   })
 
+  //Is this necessary?
   it('should return true for undefined', function() {
     expect(isEmpty(undefined)).to.be.true
   })
-
+  
   it('should return true for empty string', function() {
     expect(isEmpty('')).to.be.true
   })
@@ -63,6 +64,31 @@ describe('isEmpty.js', function() {
     const foo = new Foo()
     expect(isEmpty(foo)).to.be.true
   })
+
+  it('should return true for an object prototype with no own enumerable properties', function() {
+    function Proto() {}
+    Proto.prototype.b = 2; // Adding property to prototype, not as own property
+    const protoInstance = Object.create(Proto.prototype);
+    expect(isEmpty(protoInstance)).to.be.true;
+  });
+
+  it('should return true for an object prototype with no own properties', function() {
+    function Foo() {}
+    const proto = Foo.prototype;
+    
+    // Check if isEmpty considers it empty as expected
+    expect(isEmpty(proto)).to.be.true;
+  });
+
+  it("should return false for an object prototype with enumerable properties", function() {
+    function Foo() {}
+    Foo.prototype.a = "1";
+    const proto = Foo.prototype;
+
+    // Check if isEmpty considers it non-empty as expected
+    expect(isEmpty(proto)).to.be.false;
+  });
+
 
   it('should return false for object with own properties', function() {
     function Foo() {

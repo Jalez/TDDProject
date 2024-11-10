@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test:coverage": "c8 --exclude='**/test/**' npm test"
+    "test:coverage": "c8 --exclude='**/test/**' npm test",
+    "coverage:report": "c8 report"
+
   },
   "keywords": [],
   "author": "",
