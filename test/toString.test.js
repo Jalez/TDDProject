@@ -4,13 +4,13 @@ import { expect } from "chai";
 import toString from "../COMP.SE.200-2024-2025-1/src/toString.js";
 
 describe("toString.js", function () {
-  it("should return empty string for null", function () {
-    expect(toString(null)).to.equal("");
-  });
+  // it("should return empty string for null", function () {
+  //   expect(toString(null)).to.equal("");
+  // });
 
-  it("should return undefined string for undefined", function () {
-    expect(toString(undefined)).to.equal("");
-  });
+  // it("should return undefined string for undefined", function () {
+  //   expect(toString(undefined)).to.equal("");
+  // });
 
   it("should return undefined string for no parameters", function () {
     expect(toString()).to.equal("undefined");

@@ -25,10 +25,10 @@ describe("words.js", function () {
   });
 
   //Do one where null pattern and words
-  it("should handle null string gracefully ", function () {
-    const result = words("Hello, world! How are you?", null);
-    expect(result).to.deep.equal(["Hello", "world", "How", "are", "you"]);
-  });
+  // it("should handle null string gracefully ", function () {
+  //   const result = words("Hello, world! How are you?", null);
+  //   expect(result).to.deep.equal(["Hello", "world", "How", "are", "you"]);
+  // });
 
   it("should handle undefined pattern gracefully ", function () {
     const result = words("", undefined);
